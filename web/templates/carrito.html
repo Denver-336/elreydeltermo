@@ -115,7 +115,9 @@ No Space
         >Limpiar Carrito</a
       >
       {% endcomment %}
-      <a href="#" class="checkout-button button">Realizar Pedido</a>
+      <a href="{% url 'web:registrarPedido' %}" class="checkout-button button"
+        >Realizar Pedido</a
+      >
       <div class="order-total" style="text-align: center; margin-right: 1rem">
         <p class="cart-totals-ttl center">Total</p>
         <p class="cart-totals-val">${{ request.session.cartMontoTotal}}0</p>
