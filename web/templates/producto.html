@@ -102,7 +102,10 @@
           {% endcomment %}
         </p>
         <div class="prod-add">
-          <form action="#" method="post">
+          <form
+            action="{% url 'web:agregarCarrito' producto.id %}"
+            method="post"
+          >
             {% csrf_token %} {% comment %}
             <div class="variations">
               <div class="variations-row">
@@ -121,8 +124,7 @@
             <button type="submit" class="button">
               <i class="icon ion-android-cart"></i> Agregar al Carrito
             </button>
-            {% comment %}
-            <p class="qnt-wrap prod-li-qnt">
+            <p class="qnt-wrap prod-li-qnt" style="margin-left: 1.5rem">
               <a href="#" class="qnt-plus prod-li-plus"
                 ><i class="icon ion-arrow-up-b"></i
               ></a>
@@ -131,7 +133,6 @@
                 ><i class="icon ion-arrow-down-b"></i
               ></a>
             </p>
-            {% endcomment %}
           </form>
         </div>
       </div>
