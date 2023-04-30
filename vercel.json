@@ -20,7 +20,7 @@
       "dest": "/static/$1"
     },
     {
-      "src": "/static/(.*)",
+      "src": "/(.*)",
       "dest": "elreydeltermo/wsgi.py"
     }
   ]
