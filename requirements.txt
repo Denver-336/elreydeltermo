@@ -3,3 +3,4 @@ Pillow
 mysqlclient
 django-admin-tailwind
 python-decouple
+drf.yasg
